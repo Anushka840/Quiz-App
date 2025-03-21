@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #eaf1f8;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    height: 15rem;
+    width: 26rem;
+}
+h1{
+    font-family: cursive;
+    text-shadow: 2px 2px 2px gray;
+}
+h2{
+    font-family: cursive;
+}
+#namePage input{
+    /* margin-top: 2rem; */
+    margin-left: 0.1rem;
+    height: 2rem;
+    width: 15rem;
+}
+
+.category-btn,
+.option-btn,
+.next-btn,
+.submit-btn,
+.start-btn {
+    /* padding: 10px 20px; */
+    height: 2.5rem;
+    width: 7rem;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #378fed;
+    color: rgb(12, 11, 11);
+    border: none;
+    border-radius: 5px;
+}
+
+.category-btn {
+    background-color: #28a745;
+}
+
+.option-btn {
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.correct {
+    background-color: green;
+}
+
+.wrong {
+    background-color: red;
+}

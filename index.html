@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Welcome to the Quiz Game</h1>
+
+    <!--Input page-->
+    <div id="namePage" class="container">
+        <h2>Enter Your Name</h2>
+        <input type="text" id="playerName" placeholder="Enter Name" />
+        <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Category -->
+    <div id="categoryPage" class="container" style="display: none;">
+        <h2>Select a Category</h2>
+        <button class="category-btn" onclick="startCategory('html')">HTML</button>
+        <button class="category-btn" onclick="startCategory('css')">CSS</button>
+        <button class="category-btn" onclick="startCategory('js')">JavaScript</button>
+    </div>
+
+    <!-- Quiz Questions-->
+    <div id="quizPage" class="container" style="display: none;">
+        <p id="question"></p>
+        <div id="options"></div>
+        <button class="next-btn" onclick="nextQuestion()">Next</button>
+        <button class="submit-btn" onclick="submitQuiz()" style="display: none;">Submit</button>
+    </div>
+
+    <!-- Score Page -->
+    <div id="scorePage" class="container" style="display: none;">
+        <h2>Quiz Over!</h2>
+        <p id="finalScore"></p>
+        <button class="start-btn" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
